@@ -1,0 +1,16 @@
+<p>
+  create works!
+</p>
+
+<form [formGroup]="delivery" (ngSubmit)="onSubmit()">
+  <p>Firstname : <input type="text" formControlName="first_name"/></p>
+  <p>Lastname : <input type="text" formControlName="last_name"/></p>
+  <p>Email : <input type="text" formControlName="email"/></p>
+  <p>Phone : <input type="text" formControlName="phone"/></p>
+  <p>Age : <input type="text" formControlName="age" [(ngModel)]="age"/>{{age}}</p>
+  <p>License : <input type="file" formControlName="license"/></p>
+  <p>Resident proof : <input type="file" formControlName="resident_proof"/></p>
+  <p>Bank details : <input type="text" formControlName="bank_detail"/></p>
+  <p>Vehical details : <input type="text" formControlName="vehical_details"/></p>
+  <p>Submit : <input type="submit"/></p>
+</form>

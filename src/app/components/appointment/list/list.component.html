@@ -1,0 +1,8 @@
+<h3>List</h3>
+<ul *ngIf="restaurants">
+  <li *ngFor="let restaurant of restaurants">           
+      {{restaurant.name}} {{restaurant.rating}}
+    <a [routerLink]="['detail',restaurant.id]">View</a>        
+  </li>
+</ul>
+<router-outlet name="details"></router-outlet>
